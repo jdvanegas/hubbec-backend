@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.2" />
+    <PackageReference Include="SimpleInjector" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\3.Domain\Domain.Common\Domain.Common.csproj" />
+    <ProjectReference Include="..\..\3.Domain\Domain.Entities\Domain.Entities.csproj" />
+    <ProjectReference Include="..\..\3.Domain\Domain.Repository\Domain.Repository.csproj" />
+    <ProjectReference Include="..\..\Domain.DataTransferObjects\Domain.DataTransferObjects.csproj" />
+  </ItemGroup>
+
+</Project>
